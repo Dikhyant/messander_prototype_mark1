@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database_test</title>
+</head>
+<body>
+
+    <!-- messages display -->
+    <div class="message-display">
+
+    </div>
+
+    <form class="ui">
+        <div><input type="text" name="sender"></div>
+        <div><input type="text" name="message"></div>
+        <div><button >Send</button></div>
+    </form>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCl-x-TL8kENmz55zCfqHeUhX9acNzcfAg",
+        authDomain: "database-5fe98.firebaseapp.com",
+        databaseURL: "https://database-5fe98.firebaseio.com",
+        projectId: "database-5fe98",
+        storageBucket: "database-5fe98.appspot.com",
+        messagingSenderId: "436703830769",
+        appId: "1:436703830769:web:f72c9073530549679cbf50",
+        measurementId: "G-LLP86NPDTB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    
+    
+    <script src="./js/dkd.js"></script>
+    <script src="./js/dataTunnel.js"></script>
+    <script src="./js/read_Database.js"></script>
+    <script src="./js/ui_handler.js"></script>
+    <script src="./js/render.js"></script>
+    
+</body>
+</html>
